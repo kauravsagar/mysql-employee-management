@@ -32,7 +32,7 @@ def delete(employee_id):
     if execute_sql(sql, employee_id):
         print('employee deleted successfully')
     else:
-        print('unable to delee user')
+        print('unable to delete user')
 
 def update(employee_id, first_name, last_name, email, age):
     sql = "UPDATE employees SET first_name=%s, last_name=%s, email=%s, age=%s where id = %s"
@@ -96,7 +96,3 @@ while True:
         print('Wrong option please try again.')
 
 print('Thank you!!!')
-#sql = "INSERT INTO employees values(NULL, %s, %s, %s, %s)"
-#delete  = "DELETE FROM employees WHERE id = %s"
-#select = "SELECT * FROM employees WHERE id = %s"
-#execute_sql(select, 1)
